@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/voting_bsv/static/css/main.bca2956b.css",
+    "main.js": "/voting_bsv/static/js/main.84a403df.js",
+    "static/js/787.ee04e7c1.chunk.js": "/voting_bsv/static/js/787.ee04e7c1.chunk.js",
+    "index.html": "/voting_bsv/index.html",
+    "main.bca2956b.css.map": "/voting_bsv/static/css/main.bca2956b.css.map",
+    "main.84a403df.js.map": "/voting_bsv/static/js/main.84a403df.js.map",
+    "787.ee04e7c1.chunk.js.map": "/voting_bsv/static/js/787.ee04e7c1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bca2956b.css",
+    "static/js/main.84a403df.js"
+  ]
+}
