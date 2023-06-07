@@ -14,7 +14,7 @@ import {
   Link,
   Typography,
   Box,
-  Divider
+  Divider,
 } from "@mui/material";
 import {
   Scrypt,
@@ -29,7 +29,7 @@ import Footer from "./Footer";
 // `npm run deploycontract` to get deployment transaction id
 const contract_id = {
   /** The deployment transaction id */
-  txId: "65d80537b63bc7fe12280826cdb9fa4424add5c08def0340ddc8444908c03d9e",
+  txId: "2dbda3c5c8601c8a8820cfde5730857d056bd29a0da98d7e7444c0ed7bab00d5",
   /** The output index */
   outputIndex: 0,
 };
@@ -165,8 +165,8 @@ function App() {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell align="center">iPhone</TableCell>
-              <TableCell align="center">Android</TableCell>
+              <TableCell align="center">Door</TableCell>
+              <TableCell align="center">Wheel</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -178,8 +178,8 @@ function App() {
                       height: 200,
                     }}
                     component="img"
-                    alt={"iphone"}
-                    src={`${process.env.PUBLIC_URL}/${"iphone"}.png`}
+                    alt={"door"}
+                    src={`${process.env.PUBLIC_URL}/${"door"}.jpeg`}
                   />
                 </Box>
               </TableCell>
@@ -190,8 +190,8 @@ function App() {
                       height: 200,
                     }}
                     component="img"
-                    alt={"android"}
-                    src={`${process.env.PUBLIC_URL}/${"android"}.png`}
+                    alt={"wheel"}
+                    src={`${process.env.PUBLIC_URL}/${"wheel"}.webp`}
                   />
                 </Box>
               </TableCell>
@@ -199,7 +199,7 @@ function App() {
             <TableRow>
               <TableCell align="center">
                 <Box>
-                  <Typography variant={"h1"} >
+                  <Typography variant={"h1"}>
                     {votingContract?.candidates[0].votesReceived.toString()}
                   </Typography>
                   <Button
@@ -213,7 +213,7 @@ function App() {
               </TableCell>
 
               <TableCell align="center">
-              <Divider orientation="vertical" flexItem />
+                <Divider orientation="vertical" flexItem />
                 <Box>
                   <Typography variant={"h1"}>
                     {votingContract?.candidates[1].votesReceived.toString()}

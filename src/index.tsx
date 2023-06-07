@@ -1,22 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { Scrypt } from 'scrypt-ts'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { Scrypt } from "scrypt-ts";
 
-import { Voting } from './contracts/voting';
-var artifact = require('../artifacts/src/contracts/voting.json');
+import { Voting } from "./contracts/voting";
+var artifact = require("../artifacts/src/contracts/voting.json");
 Voting.loadArtifact(artifact);
 
 Scrypt.init({
   // https://docs.scrypt.io/advanced/how-to-integrate-scrypt-service#get-your-api-key
-  apiKey: 'YOUR_API_KEY',
-  network: 'testnet'
-})
+  apiKey: "testnet_BO9pX95zdMZel6axThQ3gYwnMsVG94YWhACKp2slB4Y4xPWY",
+  network: "testnet",
+});
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 
 root.render(
